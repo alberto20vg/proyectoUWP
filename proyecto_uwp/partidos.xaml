@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="proyecto_uwp.partidos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:proyecto_uwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="grid">
+        <ComboBox x:Name="comboEquipo1" Margin="302,214,0,0" Width="320" Height="120" SelectionChanged="comboEquipo1_SelectionChanged" FontSize="14"/>
+        <Button x:Name="botonVolver" Content="Volver" Margin="889,568,0,0" VerticalAlignment="Top" Height="60" Width="200" Click="clickVolver"/>
+        <ComboBox x:Name="comboEquipo2" Margin="959,207,0,0" Width="320" Height="115" SelectionChanged="comboEquipo2_SelectionChanged" FontSize="20"/>
+        <Button x:Name="guardarPartido" Content="Guardar" Margin="516,568,0,0" VerticalAlignment="Top" Height="60" Width="200" Click="guardarPartido_Click"/>
+        <TextBlock x:Name="textoAlert" HorizontalAlignment="Left" Margin="616,444,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="390" FontSize="20"/>
+        <TextBox x:Name="goles_locales" HorizontalAlignment="Left" Margin="684,231,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" FontSize="12"/>
+        <TextBox x:Name="goles_visitante" HorizontalAlignment="Left" Margin="857,230,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="791,231,0,0" Text="-" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
+    </Grid>
+</Page>
